@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   1. HOVER BUTTON
+   ========================= */
+
+.hover-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hover-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   2. BOX SHADOW
+   ========================= */
+
+.shadow-box {
+    width: 250px;
+    padding: 40px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   3. TRANSFORM
+   ========================= */
+
+.transform-box {
+    width: 200px;
+    padding: 40px;
+    margin: auto;
+
+    background: #ddd;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+.transform-box:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+
+/* =========================
+   4. ANIMATION
+   ========================= */
+
+.animation-box {
+    width: 200px;
+    padding: 30px;
+    margin: auto;
+
+    background: #ddd;
+    border-radius: 10px;
+
+    animation: moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-50px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+
+/* =========================
+   5. TEXT EFFECT
+   ========================= */
+
+.glow-text {
+    font-size: 30px;
+    font-weight: bold;
+
+    text-shadow: 0 0 10px #777;
+    transition: 0.3s;
+}
+
+.glow-text:hover {
+    transform: scale(1.1);
+}
